@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      :root {
+       --color: rgb(0, 60, 255);
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="projects.css">
+  </head>
+<body>
+
+
+  <div class="menu">
+  
+    <a href="index.html" class="home">Works</a>
+    <div class="title">Il Gesto Eterno</div>
+    <div class="subtitle">TEAM PROJECT</div>
+  
+  </div>
+
+
+
+<img class="copertina" src="Images/gestoeterno/copertina.png">
+
+<div class="introtext">
+  <div class="column left">
+    Branding, Layout Design, UI Design, Coding
+  </div>
+  <div class="column right">
+    Il Gesto Eterno is a project with the aim of making accessible three Lucio Fontana's  <a href="https://artsandculture.google.com/story/2AXhe4GlW3osLw?hl=it" target="_blank" class="colored">paintings</a> housed within the Museo del 900' in Milan. 
+    <br><br>In line with this objective, scale reproductions of Fontana's triptych have been created; the materiality and depth of the cuts reproduced on the canvases allows people with visual impairments to tactilely enjoy the artworks. 
+    <br><br>A printed brochure has also been designed to provide a tactile "experience" to be enjoyed individually.
+    Through the QR code it's then possible to access an audio player, specifically designed to be easily used by blind people. 
+  </div>
+</div>
+
+<div class="bigcover">
+    <img class="three" src="Images/gestoeterno/foto.png">
+    <img class="three" src="Images/gestoeterno/foto1.png">
+    <img class="three" src="Images/gestoeterno/foto2.gif">
+</div>
+
+<div class="conclusion">
+ The audio player implements a non-visual interactive interface, taking advantage of the entire screen of the mobile device to manage user interactions without the need to see what's happening on the screen.
+</div>
+
+<div class="bigcover">
+    <div class="boxvideo defined" onclick="controlvideo()" onmouseenter="tellplay(1)" onmouseleave="tellstop()">
+        <video id="video" class="app" playsinline>
+          <source src="Images/gestoeterno/vid1.mp4#t=0.1" type="video/mp4">
+        </video>
+        <div id="play" class="play"><div class="center">Play</div></div>
+        <div class="insidetext">Introductory guide explaining how to control audio playback</div>
+    </div>
+
+    <div class="boxvideo defined" onclick="controlvideo2()" onmouseenter="tellplay2(1)" onmouseleave="tellstop2()">
+        <video id="video2" class="app" playsinline>
+          <source src="Images/gestoeterno/app.mov#t=0.1" type="video/mp4">
+        </video>
+        <div id="play2" class="play"><div class="center">Play</div></div>
+        <div class="insidetext">Audio management via gestures</div>
+    </div>
+</div>
+
+<div class="bigcover">
+    <div class="twoimages">
+        <video class="insideimage" autoplay muted loop playsinline>
+            <source src="Images/gestoeterno/guida.mov" type="video/mp4">
+        </video>
+        <div class="insidetext">Transcribed audioguide content</div>
+    </div>
+    <div class="twoimages mac">
+        <img class="insideimage" src="Images/gestoeterno/QR.png">
+        <div class="insidetext">Scan the QR to access the webapp</div>
+    </div>
+    <a href="https://marco-trabattoni.github.io/ProvaAccessibilityMobile/" target="_blank">
+      <div class="bluebutton mobile">
+        <span class="center">Click here to visit the webapp</span>
+      </div>
+    </a>
+</div>
+
+<a href="raiaccessibilita.html">
+  <div class="nextP">
+    <div class="next">NEXT</div>
+    <div class="next T">Rai Accessibilità</div>
+  </div>
+</a> 
+
+
+<script src="project.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      :root {
+       --color: rgb(255, 71, 30);
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+
+<div class="menu">
+  
+  <a href="index.html" class="home">Marco Trabattoni</a>
+  <div class="title">Halidon redesign</div>
+  <div class="subtitle">PERSONAL PROJECT</div>
+
+</div>
+
+
+  <img class="copertina mac" src="Images/halidon/Halidon.png">
+  <img class="copertina mobile" src="Images/halidon/Mobile1.png">
+
+
+<div class="introtext">
+  <div class="column left">
+    Branding, Layout Design, Motion Design
+  </div>
+  <div class="column right">
+    <a href="https://www.youtube.com/channel/UCyOfqgtsQaM3S-VZnsYnHjQ" target="_blank" class="colored">Halidon</a> is an independent Italian record company that distributes classical music collections on Youtube. 
+    <br>While Halidon excels in the quality of their content, being well appreciated by its fans, it's not the only player to do so, especially on YouTube. 
+    <br>For this reason a cliched communication could heavily undermine its ability to stand out appropriately among its competitors. 
+    <br><br>That's why I designed a visual system to express the channel uniqueness while being capable of adapting to the variaety of their content. 
+    <br><br>The project includes new covers for their collections, including those dedicated to the great classical composers (the so-called "Best of" covers), and in addition generative visuals to be implemented in the videos so as to provide listeners with a more complete audiovisual experience.
+  </div>
+</div>
+
+<div class="bigcover">
+<img class="twoimages" src="Images/halidon/Halidon-03.png">
+<img class="twoimages" src="Images/halidon/Halidon-04.png">
+</div>
+
+<div class="conclusion">
+  The line serves as a metaphor for sound, especially notes, repetitive entities, always the same. But it is precisely from the union of the different notes, or lines, that it becomes possible to create extraordinary symphonies.
+</div>
+
+<img class="bigcover mac" src="Images/halidon/Halidon-05.png">
+<img class="bigcover mobile" src="Images/halidon/Mobile2.png">
+
+<div class="boxvideo"  onclick="controlvideo()" onmouseenter="tellplay()" onmouseleave="tellstop()">
+  <video id="video" class="video" playsinline>
+    <source src="Images/halidon/Visuals.m4v#t=0.1" type="video/mp4">
+  </video>
+  <div id="play" class="play"><div class="center">Play</div></div>
+</div>
+
+<a href="gestoeterno.html">
+  <div class="nextP">
+    <div class="next">NEXT</div>
+    <div class="next T">Il Gesto Eterno</div>
+  </div>
+</a> 
+
+
+<script src="project.js"></script>
+</body>
+</html>

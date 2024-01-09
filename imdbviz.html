@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      :root {
+       --color: rgb(104, 93, 255);
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="projects.css">
+    <style>
+      .copertina {
+        width: 210vw;
+      }
+
+      @media only screen and (min-width: 768px) {
+        .copertina {
+        width: 100vw;
+      }
+      }
+    </style>
+    <style>
+    </style>
+  </head>
+<body>
+
+
+  <div class="menu">
+    <a href="index.html" class="home">Marco Trabattoni</a>
+    <div class="title">A little map of cinema</div>
+    <div class="subtitle">PERSONAL PROJECT</div>
+  </div>
+
+
+<div id="scrolling">
+    <img class="copertina" src="Images/imdbviz/imdb.svg">
+</div>
+
+<div class="introtext">
+  <div class="column left">
+    Data Visualization,<br>Layout Design
+  </div>
+  <div class="column right">
+    The graph shows the directors and actors who collaborated the most with each other within IMDb's Top 250 Movies list.
+    <br><br>It's a graphic visualization designed specifically for <a href="https://en.wikipedia.org/wiki/List_of_film_director_and_actor_collaborations" target="_blank" class="colored">Wikipedia</a>, displaying only interconnected subjects (actors and directors) with at least 2 appearances on the IMDB's list.
+  </div>
+</div>
+
+<div class="bigcover">
+  <img class="twoimages" src="Images/imdbviz/small2.svg">
+  <img class="twoimages" src="Images/imdbviz/small1.svg">
+</div>
+
+<a href="raiaccessibilita.html">
+  <div class="nextP">
+    <div class="next">NEXT</div>
+    <div class="next T">Rai Accessibilità</div>
+  </div>
+</a> 
+
+
+<script src="project.js"></script>
+</body>
+</html>

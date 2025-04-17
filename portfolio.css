@@ -95,10 +95,10 @@ body {
 
 
 .progetti {
-  font-size: 4.2vw;
+  font-size: 1rem;
   color: black;
   text-align: center;
-  padding-top: 9vw;
+  padding-top: 2vh;
   width: 100vw;
   z-index: 2;
 } 
@@ -204,7 +204,13 @@ body {
     color: rgb(255, 111, 0);
 }
 
+.neven {
+    color: #7090c9;
+}
 
+.tesi {
+text-decoration: underline;
+}
 
   @media only screen and (min-width: 768px) {
     #container_progetti {
@@ -217,8 +223,8 @@ body {
     }
     
     .progetti {
-      font-size: 1.8vw;
-      padding-top: 4vw;
+      padding-top: 2vw;
+      font-size: 1.1vw;
     } 
 
     .links {
@@ -252,11 +258,6 @@ body {
       width: 30vw;
       padding-top: 2vw;
     }
-
-    .progetti {
-      font-size: 1.1vw;
-      padding-top: 2vw;
-    } 
 
     .links {
       font-size: 1vw;

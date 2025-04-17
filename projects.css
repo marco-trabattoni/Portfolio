@@ -1,13 +1,14 @@
 @font-face {
     font-family: sans;
     src: url(Resources/SaansTRIAL-Regular.otf);
-  }
-
-* {
-  box-sizing: border-box;
 }
 
-body, html {
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
     font-family: sans;
     color: black;
     position: relative;
@@ -35,10 +36,10 @@ body, html {
 
 .home {
     position: absolute;
-    top: 9.18vw;
+    top: 2vh;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 4.2vw;
+    font-size: 1rem;
     text-decoration: none;
     color: black;
     opacity: 36%;
@@ -60,12 +61,16 @@ body, html {
 
 .title {
     position: absolute;
-    top: 50%;
+    top: 49%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    font-size: 9vw;
+    font-size: 2.4rem;
     white-space: nowrap;
     letter-spacing: 0px;
+}
+
+.titolino {
+    font-size: 1.8rem;
 }
 
 .subtitle {
@@ -73,7 +78,7 @@ body, html {
     top: 64%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    font-size: 3.5vw;
+    font-size: 0.8rem;
     letter-spacing: 0.5px;
 }
 
@@ -84,7 +89,7 @@ body, html {
     width: 100vw;
     overflow-x: scroll;
 }
-   
+
 .copertina {
     width: 100vw;
     overflow-x: hidden;
@@ -132,22 +137,22 @@ body, html {
     font-size: 2.1vw;
 }
 
-  .left {
+.left {
     font-size: 9vw;
     line-height: 1.12;
     color: var(--color);
-  }
-  
-  .right {
+}
+
+.right {
     font-size: 4.2vw;
     margin-top: 6vw;
-  }
+}
 
 .introtext::after {
     content: "";
     clear: both;
     display: block;
-  }
+}
 
 .conclusion {
     margin-top: 18vw;
@@ -199,6 +204,18 @@ body, html {
     background-color: black;
 }
 
+.insideVid {
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.vidz {
+    height: 94vw;
+}
+
 .play {
     width: 28vw;
     height: 28vw;
@@ -210,7 +227,21 @@ body, html {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-size: 4.2vw;
-    transition: opacity 0.3s, background-color 0.1s ;
+    transition: opacity 0.3s, background-color 0.1s;
+}
+
+.overlayer {
+    width: 94vw;
+    height: 99%;
+    background-color: var(--color);
+    cursor: pointer;
+    z-index: 10;
+    opacity: 1;
+    position: absolute;
+    left: 3vw;
+    top: 0;
+    transition: 0.3s;
+    font-size: 4.2vw;
 }
 
 .center {
@@ -283,7 +314,7 @@ a {
 
 .next {
     font-size: 3.5vw;
-    position: absolute;    
+    position: absolute;
     transform: translateX(-50%);
     left: 50%;
     top: 1vw;
@@ -326,7 +357,7 @@ a {
     left: 50%;
     bottom: 12%;
     transform: translateX(-50%);
-    width: 100vw; 
+    width: 100vw;
 }
 
 .footer .textlinks {
@@ -339,27 +370,30 @@ a {
     .mobile {
         display: none;
     }
-    
+
     .mac {
         display: block;
     }
 
     .menu {
-        height: 36vh;
+        height: 28vw;
     }
+
     .home {
-        top: 4.1vw;
-        font-size: 1.8vw;
+        top: 2vw;
+        font-size: 1.1vw;
     }
+
     .title {
-        top: 46%;
+        top: 48%;
         transform: translateX(-50%) translateY(-50%);
-        font-size: 4.6vw;
+        font-size: 3.6vw;
     }
+
     .subtitle {
-        top: 60%;
+        top: 63%;
         transform: translateX(-50%) translateY(-50%);
-        font-size: 1.8vw;
+        font-size: 1vw;
     }
 
     #scrolling {
@@ -373,32 +407,32 @@ a {
         margin-top: 6vw;
         margin-bottom: 6vw;
     }
-    
+
     .column {
         float: left;
-      }
-      
-      .left {
+    }
+
+    .left {
         margin-top: -0.3vw;
         width: 50%;
         padding-right: 4%;
         font-size: 3.6vw;
         line-height: 1.12;
-      }
-      
-      .right {
+    }
+
+    .right {
         width: 50%;
         font-size: 1.2vw;
         margin-top: 0;
-      }
-    
+    }
+
     .introtext::after {
         content: "";
         clear: both;
         display: block;
-      }
+    }
 
-      .conclusion {
+    .conclusion {
         margin-top: 9vw;
         margin-bottom: 9vw;
         font-size: 3.7vw;
@@ -432,9 +466,21 @@ a {
     .app {
         border-top: 0px;
     }
-    
+
     .insideimage {
         border-top: 0px;
+    }
+
+    .insideVid {
+        width: 40%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .vidz {
+        height: 46.82vw;
     }
 
     .play {
@@ -442,9 +488,20 @@ a {
         height: 16vw;
         font-size: 2.1vw;
     }
+
+    .overlayer {
+        height: 96%;
+        opacity: 0;
+        top: 2vw;
+        font-size: 3.7vw;
+    }
     
+    .overlayer:hover {
+        opacity: 1;
+    }
+
     .insidetext {
-        font-size: 1.1vw;
+        font-size: 1vw;
         left: 1.5%;
         top: 1.2%;
     }
@@ -454,12 +511,12 @@ a {
         padding-bottom: 1.8vw;
         height: 9vw;
     }
-    
+
     .next {
         font-size: 1vw;
         top: 1vw;
     }
-    
+
     .T {
         top: 3vw;
         font-size: 2.1vw;
@@ -469,33 +526,17 @@ a {
         margin-top: 6vw;
         height: 54vh;
     }
+
     .onetext {
         top: 18%s;
         font-size: 4.6vw;
     }
-    
-  
-  }
 
 
-@media only screen and (min-width: 1440px) {
-    .menu {
-        height: 54vh;
-    }
-    .home {
-        top: 2.12vw;
-        font-size: 1.1vw;
-    }
-    .title {
-        top: 46%;
-        transform: translateX(-50%) translateY(-50%);
-        font-size: 3.6vw;
-    }
-    .subtitle {
-        top: 64%;
-        transform: translateX(-50%) translateY(-50%);
-        font-size: 1vw;
-    }
+}
+
+
+@media only screen and (min-width: 1240px) {
 
     .play {
         width: 8vw;
@@ -508,7 +549,7 @@ a {
     .footer .textlinks {
         font-size: 1vw;
     }
-    
+
     .onetext {
         position: absolute;
         left: 50%;
@@ -517,13 +558,13 @@ a {
         width: 100vw;
         font-size: 3.6vw;
     }
-    
+
     .threelinks {
         position: absolute;
         left: 50%;
         bottom: 12%;
         transform: translateX(-50%);
-        width: 100vw; 
+        width: 100vw;
     }
 
-  }
+}

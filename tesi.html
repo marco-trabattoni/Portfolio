@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --color: rgb(255, 255, 10);
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+
+  <div class="menu">
+
+    <a href="index.html" class="home">Marco Trabattoni</a>
+    <div class="title titolino">Communicative Interfaces</div>
+    <div class="subtitle">PERSONAL PROJECT</div>
+
+  </div>
+
+
+  <div class="boxvideo mac" id="raivideo">
+    <video id="video" class="rai" autoplay muted loop playsinline>
+      <source src="Images/tesi/reel-1.mov" type="video/mp4">
+    </video>
+  </div>
+  
+  <div class="boxvideo mobile" id="raivideo">
+  <video id="video2" class="rai" autoplay muted loop playsinline>
+    <source src="Images/tesi/reel-1.mov" type="video/mp4">
+  </video>
+  </div>
+
+
+  <div class="introtext">
+    <div class="column left" style="color: black; text-decoration: underline;">
+      Communication Design Master's Thesis
+    </div>
+    <div class="column right">
+      Communicative Interfaces is the title of my research thesis developed as the final project of my Master's degree in Communication Design. 
+      <br>The thesis addresses the issue of a widespread lack of visual quality—and therefore expressive capacity—within the current landscape of interface design.
+      <br><br>
+      After analyzing the causes behind this phenomenon, the thesis invites the design community to consider the need for an independent discipline of interface design—one that values visual and expressive innovation as a fundamental part of the design process.
+      <br><br>
+      The core of the project consists of a curated collection of 50 expressive interface projects, showcasing the visual and communicative potential of digital screens.
+      <br>
+      The selected interfaces were further analyzed to identify the visual and interactive elements that define their unique digital personality. These recurring elements were grouped into macro-categories and examined in detail.
+    </div>
+  </div>
+
+  <img class="bigcover" src="Images/tesi/alls.png">
+  <img class="bigcover" src="Images/tesi/04.png">
+
+  <div class="conclusion">
+    Multiple data visualizations were designed to highlight the lack of attention to visual aspects within the field of UX design.  </div>
+
+  <div class="bigcover">
+    <img class="twoimages" src="Images/tesi/data-01.png">
+    <img class="twoimages" src="Images/tesi/data-02.png">
+</div>
+
+<div class="bigcover">
+  <img class="twoimages" src="Images/tesi/data-03.png">
+  <img class="twoimages mobile" src="Images/tesi/spettro-interaction design.png">
+  <img class="twoimages mac" style="transform: translateY(44%);" src="Images/tesi/spettro-interaction design.png">
+</div>
+
+  <div class="conclusion">
+    To encourage real conversation on the topic, the research has also been translated into a digital platform, making both the theoretical content and the archive of interfaces accessible to interested designers.
+  </div>
+
+  <div class="bigcover">
+    <div class="twoimages vidz" style="background-color: var(--color); position: relative;">
+      <video class="insideVid" autoplay muted loop playsinline style="border-top: none; background-color: transparent;">
+        <source src="Images/tesi/Video.mov" type="video/mp4">
+      </video>
+    </div>
+    <div class="twoimages mac">
+      <img class="insideimage" src="Images/tesi/QR.png">
+      <div class="insidetext">Scan the QR to access the website</div>
+    </div>
+    <a href="https://makeuigraphicagain.github.io/MakeUIGraphicAgain/?Capitolo=0" target="_blank">
+      <div class="bluebutton mobile" style="margin-top: 6px; background-color: black;">
+        <span class="center" style="color: white;">Click here to visit the website</span>
+      </div>
+    </a>
+  </div>
+
+
+  <div class="boxvideo mac" onclick="openPDF()">
+    <img class="bigcover" src="Images/tesi/fine.png">
+    <div class="overlayer"><div class="center" style="color: black;">Click to view the .pdf</div></div>
+  </div>
+
+  <div class="boxvideo mobile" style="margin-top: 6px;" onclick="openPDF()">
+    <img class="bigcover" src="Images/tesi/fine.png">
+    <div class="overlayer"><div class="center" style="color: black;">Click to view the .pdf</div></div>
+  </div>
+
+  <a href="halidon.html">
+    <div class="nextP">
+      <div class="next">NEXT</div>
+      <div class="next T">Neven Generative Identity</div>
+    </div>
+  </a>
+
+  <script src="project.js"></script>
+
+  <script>
+    function openPDF() {
+      window.open('Images/tesi/ComunicativeInterfaces-Trabattoni.pdf', '_blank');
+    }
+  </script>
+</body>
+
+</html>
